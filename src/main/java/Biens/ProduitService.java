@@ -9,8 +9,7 @@ public class ProduitService {
 	
 	private void validerProduit(Produit produit) {
 		if (produit.getQuantite() < 0 || produit.getPrix() < 0) {
-			throw new IllegalArgumentException (
-					"La quantité et le prix du produit doivent être positifs");
+			throw new IllegalArgumentException ("La quantité et le prix du produit doivent être positifs");
 		}	
 	}
 	
